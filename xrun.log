@@ -1,0 +1,167 @@
+xrun(64): 20.03-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.03-s007: Started on May 04, 2023 at 16:30:44 IST
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	ahb_interface.sv
+	apb_interface.sv
+	ahb_apb_bridge_pkg.sv
+	-access +rw
+	+UVM_TESTNAME=ahb_apb_bridge_burst_read_test
+	+UVM_VERBOSITY=UVM_NONE
+	-coverage all
+	-covclean
+	-covfile covfile.ccf
+	-covdut ahb2apb
+	-uvmnocdnsextra
+	-uvmhome /home/uvm-1.2
+	/home/uvm-1.2/src/uvm_macros.svh
+	design.sv
+	testbench.sv
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_NONE
+
+$CDSROOT = /home/installs/XCELIUM2003
+$TESTDIR = /home/Evd19i017/uvm_project_ahbapb
+
+TOOL:	xmsc(64)	20.03-s007
+xmsc C++ parameters: 
+	xmsc -COMPILER $CDSROOT/tools/cdsgcc/gcc/6.3/bin/g++ 
+	-f ./xcelium.d/run.lnx8664.20.03.d/xmsc_run/xmsc_obj/xmsc.args
+	-MANUAL 
+	-CFLAGS "-DXMSC
+		-DNCSC
+		-I$CDSROOT/tools/systemc/include_pch
+		-I$CDSROOT/tools/tbsc/include
+		-I$CDSROOT/tools/vic/include
+		-I$CDSROOT/tools/methodology/OVM/CDNS-2.1.2/sc/src
+		-I/home/uvm-1.2/sc/sc
+		-I/home/uvm-1.2/ml/sc
+		-I$CDSROOT/tools/systemc/include/cci
+		-I$CDSROOT/tools/systemc/include/factory
+		-I$CDSROOT/tools/systemc/include/tlm2
+		-fPIC
+		-D_GLIBCXX_USE_CXX11_ABI=0 -c
+		-x c++  -Wall
+		-I$CDSROOT/tools/include
+		-I$CDSROOT/tools/inca/include"
+
+make: `xcelium.d/run.lnx8664.20.03.d/xmsc_run/xmsc_obj/uvm_dpi_0.o' is up to date.
+
+make: `/home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/librun.so' is up to date.
+
+Loading snapshot worklib.ahb_apb_bridge_top:sv .................... Done
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are now enabled by default..
+SVSEED default: 1
+xmsim: *W,RNDNOXCEL: A newer version of the SystemVerilog constraint solver is available. It is recommended to enable it using "xrun/xmsim -xceligen on=1903 ..." .
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/installs/XCELIUM2003/tools/xcelium/files/xmsimrc
+xcelium> run
+UVM_INFO /home/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+UVM_INFO /home/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                       Type                            Size  Value
+----------------------------------------------------------------------
+uvm_test_top               ahb_apb_bridge_burst_read_test  -     @1969
+  env_h                    ahb_apb_bridge_environment      -     @2047
+    ahb_agent_h            ahb_agent                       -     @2117
+      driver_h             ahb_driver                      -     @2693
+        rsp_port           uvm_analysis_port               -     @2765
+        seq_item_port      uvm_seq_item_pull_port          -     @2728
+      monitor_h            ahb_monitor                     -     @2660
+        monitor_port       uvm_analysis_port               -     @3287
+      sequencer_h          ahb_sequencer                   -     @2796
+        rsp_export         uvm_analysis_export             -     @2841
+        seq_item_export    uvm_seq_item_pull_imp           -     @3247
+        arbitration_queue  array                           0     -    
+        lock_queue         array                           0     -    
+        num_last_reqs      integral                        32    'd1  
+        num_last_rsps      integral                        32    'd1  
+    apb_agent_h            apb_agent                       -     @2148
+      driver_h             apb_driver                      -     @3372
+        rsp_port           uvm_analysis_port               -     @3444
+        seq_item_port      uvm_seq_item_pull_port          -     @3407
+      monitor_h            apb_monitor                     -     @3339
+        monitor_port       uvm_analysis_port               -     @3965
+      sequencer_h          apb_sequencer                   -     @3475
+        rsp_export         uvm_analysis_export             -     @3519
+        seq_item_export    uvm_seq_item_pull_imp           -     @3925
+        arbitration_queue  array                           0     -    
+        lock_queue         array                           0     -    
+        num_last_reqs      integral                        32    'd1  
+        num_last_rsps      integral                        32    'd1  
+    scoreboard_h           ahb_apb_bridge_scoreboard       -     @2179
+      ahb_monitor_fifo     uvm_tlm_analysis_fifo #(T)      -     @2178
+        analysis_export    uvm_analysis_imp                -     @2388
+        get_ap             uvm_analysis_port               -     @2352
+        get_peek_export    uvm_get_peek_imp                -     @2282
+        put_ap             uvm_analysis_port               -     @2317
+        put_export         uvm_put_imp                     -     @2245
+      apb_monitor_fifo     uvm_tlm_analysis_fifo #(T)      -     @2420
+        analysis_export    uvm_analysis_imp                -     @2597
+        get_ap             uvm_analysis_port               -     @2561
+        get_peek_export    uvm_get_peek_imp                -     @2491
+        put_ap             uvm_analysis_port               -     @2526
+        put_export         uvm_put_imp                     -     @2454
+----------------------------------------------------------------------
+
+
+---Scoreboard done---
+
+Input monitor packet count = 1007, output monitor packet count = 1007, no of successful comparisions =         501
+
+-----------------------
+
+---- Coverage-----
+
+RESET Coverage: 	 100.000000
+Address Coverage: 	 100.000000
+Read Coverage: 	 100.000000
+Write Coverage: 	 0.000000
+Address Write Coverage: 	 0.000000
+Address Read Coverage: 	 100.000000
+
+Simulation complete via $finish(1) at time 10075 NS + 59
+/home/uvm-1.2/src/base/uvm_root.svh:517     $finish;
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+xmsim: *W,CGDEFN: Default name "worklib.uvm_pkg::.coverage" will be generated for covergroup instance "coverage" as the name of the covergroup instance is not specified explicitly: ./ahb_apb_bridge_scoreboard.sv, 23.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  ahb_apb_bridge_top.DUT(ahb2apb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3c31afaf_2d1d7e8d.ucm
+  data               :  ./cov_work/scope/test/icc_3c31afaf_2d1d7e8d.ucd
+TOOL:	xrun(64)	20.03-s007: Exiting on May 04, 2023 at 16:30:45 IST  (total: 00:00:01)

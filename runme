@@ -1,0 +1,7 @@
+rm -r -f cov_work_old
+mv cov_work cov_work_old
+rm -r -f ahb_apb_bridge_report_old
+mv ahb_apb_bridge_report ahb_apb_bridge_report_old
+
+xrun -Q -unbuffered -timescale 1ns/1ns -sysv ahb_interface.sv apb_interface.sv ahb_apb_bridge_pkg.sv -access +rw +UVM_TESTNAME=ahb_apb_bridge_burst_read_test +UVM_VERBOSITY=UVM_NONE -coverage all -covclean -covfile covfile.ccf -covdut ahb2apb -uvmnocdnsextra -uvmhome $UVM_HOME $UVM_HOME/src/uvm_macros.svh design.sv testbench.sv
+imc -batch -init imc.tcl
