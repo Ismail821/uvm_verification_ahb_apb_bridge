@@ -6,6 +6,10 @@ Tools used:
 Cadence Xcelium 
 
 The DUT is designed in Verilog with the main State machine with reference from the arm developer website with the inclusive of PREADY and PSLVERR, to consider the availability of the APB Slaves.
+The FSM is Designed based on the Architecture given in the ARM developer page here: https://developer.arm.com/documentation/ddi0170/a/AHB-Modules/APB-bridge/Function-and-operation-of-module
+
+![image](https://github.com/Ismail821/uvm_ahb_apb_bridge/assets/80463970/154e4386-9630-48d5-a0f0-8b7c55be2647)
+
 
 The RTL Consists of the following:
 - Macro definitions
