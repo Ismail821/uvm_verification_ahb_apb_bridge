@@ -1,4 +1,4 @@
-# uvm_ahb_apb_bridge
+# Verification of AHB to APB Brdige with UVM
 UVM Verification enviroinment for AHB to APB bridge.\n
 Supports upto 8 APB slave Devices. 
 
