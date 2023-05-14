@@ -20,6 +20,11 @@ The RTL Consists of the following:
 - And a FSM logic making the transfer of the data and Following the protocol.
 - And a Combinational logic to decide the slave select based on the address
 
+The Test Bench Architecture is defined as follows:
+![image](https://github.com/Ismail821/uvm_ahb_apb_bridge/assets/80463970/98bc09bf-0bef-480e-912b-8d4fc7b08181)
+
+
+
 The testbench provides the value for all the APB slaves simultaneously for every cycle and sends them to the DUT as
 
 Test Cases:
