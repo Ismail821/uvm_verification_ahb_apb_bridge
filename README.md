@@ -1,8 +1,11 @@
 # uvm_ahb_apb_bridge
-UVM Verification enviroinment for AHB to APB bridge. Supports upto 8 APB slave Devices. 
+UVM Verification enviroinment for AHB to APB bridge.\n
+Supports upto 8 APB slave Devices. 
+\n\n\n
 Tools used: 
 Cadence Xcelium 
-DUT:
+
+\n\n\nDUT:
 The DUT is designed in Verilog with the main State machine with reference from the arm developer website with the inclusive of PREADY and PSLVERR, to consider the availability of the APB Slaves.
 The RTL Consists of the following:
 •	Macro definitions
