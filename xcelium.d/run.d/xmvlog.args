@@ -1,0 +1,30 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.20.03.d
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+ahb_interface.sv
+apb_interface.sv
+ahb_apb_bridge_pkg.sv
+-uvmnocdnsextra
+/home/uvm-1.2/src/uvm_macros.svh
+design.sv
+testbench.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.20.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.03.d/hdlrun.var
+-I_INCDIR
+/home/uvm-1.2/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.20.03.d/xllibs
+-ALLOWUNBOUND
+-ENABLEOIGW

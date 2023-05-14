@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/1ns
+-ACCESS
++rw
+-COVERAGE
+all
+-COVFILE
+covfile.ccf
+-COVDUT
+ahb2apb

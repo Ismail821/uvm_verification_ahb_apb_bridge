@@ -1,0 +1,6 @@
+xmsc: -nocopyright -COMPILEONLY -cdslib /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/cdsrun.lib -hdlvar /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/hdlrun.var -work worklib
+xmvlog: -nocopyright -cdslib /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/cdsrun.lib -hdlvar /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/hdlrun.var -work worklib
+xmvhdl: -nocopyright -cdslib /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/cdsrun.lib -hdlvar /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/hdlrun.var -work worklib
+xmelab: -nocopyright -cdslib /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/cdsrun.lib -hdlvar /home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/hdlrun.var -work worklib
+simplus: +tb_rc_dir+./xcelium.d/run.lnx8664.20.03.d/xmsc_run +tb_run_dir+/home/Evd19i017/uvm_project_ahbapb +tb_trans_record
+vspsim: -nocopyright -unbuffered

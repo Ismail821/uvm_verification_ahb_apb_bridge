@@ -1,0 +1,8 @@
+define XMSIMRC	( /home/installs/XCELIUM2003/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.ahb_apb_bridge_top:sv
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT worklib.ahb_apb_bridge_top:sv

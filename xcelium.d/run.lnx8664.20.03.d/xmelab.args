@@ -1,0 +1,31 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++UVM_VERBOSITY=UVM_NONE
+-loadpli
+/home/installs/XCELIUM2003/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
+-UNBUFFERED
+-timescale
+1ns/1ns
+-ACCESS
++rw
++UVM_TESTNAME=ahb_apb_bridge_single_write_test
+-COVERAGE
+all
+-COVFILE
+covfile.ccf
+-COVDUT
+ahb2apb
+-loadrun
+./xcelium.d/run.lnx8664.20.03.d/librun
+-XLMODE
+./xcelium.d/run.lnx8664.20.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.20.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

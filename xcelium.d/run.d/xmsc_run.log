@@ -1,0 +1,28 @@
+$CDSROOT = /home/installs/XCELIUM2003
+$TESTDIR = /home/Evd19i017/uvm_project_ahbapb
+
+TOOL:	xmsc(64)	20.03-s007
+xmsc C++ parameters: 
+	xmsc -COMPILER $CDSROOT/tools/cdsgcc/gcc/6.3/bin/g++ 
+	-f ./xcelium.d/run.lnx8664.20.03.d/xmsc_run/xmsc_obj/xmsc.args
+	-MANUAL 
+	-CFLAGS "-DXMSC
+		-DNCSC
+		-I$CDSROOT/tools/systemc/include_pch
+		-I$CDSROOT/tools/tbsc/include
+		-I$CDSROOT/tools/vic/include
+		-I$CDSROOT/tools/methodology/OVM/CDNS-2.1.2/sc/src
+		-I/home/uvm-1.2/sc/sc
+		-I/home/uvm-1.2/ml/sc
+		-I$CDSROOT/tools/systemc/include/cci
+		-I$CDSROOT/tools/systemc/include/factory
+		-I$CDSROOT/tools/systemc/include/tlm2
+		-fPIC
+		-D_GLIBCXX_USE_CXX11_ABI=0 -c
+		-x c++  -Wall
+		-I$CDSROOT/tools/include
+		-I$CDSROOT/tools/inca/include"
+
+make: `xcelium.d/run.lnx8664.20.03.d/xmsc_run/xmsc_obj/uvm_dpi_0.o' is up to date.
+
+make: `/home/Evd19i017/uvm_project_ahbapb/./xcelium.d/run.lnx8664.20.03.d/librun.so' is up to date.
