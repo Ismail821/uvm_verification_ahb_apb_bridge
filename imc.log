@@ -1,7 +1,0 @@
-IMC(64): 20.03-s003: (c) Copyright 1995-2020 Cadence Design Systems Inc - Simulator version: 20.03-s007 - Coverage engine version: 20.03-s007
-imc: *I,RUNLD: Successfully loaded run /home/Evd19i017/uvm_project_ahbapb/cov_work/scope/test.
-
-Generate report to: /home/Evd19i017/uvm_project_ahbapb/ahb_apb_bridge.csv
-imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
-imc: *W,OPTIGN: The '-overwrite' option is invalid with text reports. This option will be ignored.
-Metrics report written to /home/Evd19i017/uvm_project_ahbapb/ahb_apb_bridge_report/index.html

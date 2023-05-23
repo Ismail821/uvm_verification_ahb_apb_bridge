@@ -1,6 +1,0 @@
-set_branch_scoring
-set_fsm_arc_scoring
-set_expr_scoring -fcc
-set_expr_coverable_operators -all
-set_expr_coverable_statements -all
-
