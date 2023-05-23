@@ -1,6 +1,10 @@
 # Verification of AHB to APB Brdige with UVM
-UVM Verification enviroinment for AHB to APB bridge.\n
+Co Authored by ShotoTodorokiJr
+
+UVM Verification enviroinment for AHB to APB bridge.
 Supports upto 8 APB slave Devices. 
+
+Documentation still under progress.
 
 Tools used: 
 Cadence Xcelium 
