@@ -25,7 +25,8 @@ The RTL Consists of the following:
 - And a Combinational logic to decide the slave select based on the address
 
 The Test Bench Architecture is defined as follows:
-![image](https://github.com/Ismail821/uvm_verification_ahb_apb_bridge/assets/80463970/98bc09bf-0bef-480e-912b-8d4fc7b08181)
+![image](https://github.com/Ismail821/uvm_verification_ahb_apb_bridge/assets/80463970/bc66ec0b-c631-47ed-880e-9f6a822a933f)
+
 
 
 
