@@ -1,3 +1,10 @@
+/*
+-----------AHB AGENT--------------
+AHB Agent is responsible for emulating the AHB side of the transaction
+for the AHB - APB bridge. It consists of a Driver and a monitor to drive 
+and observe signals
+*/
+
 
 class ahb_agent extends uvm_agent;
     `uvm_component_utils(ahb_agent)
