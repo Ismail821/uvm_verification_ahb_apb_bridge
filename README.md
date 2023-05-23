@@ -12,7 +12,7 @@ Cadence Xcelium
 The DUT is designed in Verilog with the main State machine with reference from the arm developer website with the inclusive of PREADY and PSLVERR, to consider the availability of the APB Slaves.
 The FSM is Designed based on the Architecture given in the ARM developer page here: https://developer.arm.com/documentation/ddi0170/a/AHB-Modules/APB-bridge/Function-and-operation-of-module
 
-![image](https://github.com/Ismail821/uvm_verification_ahb_apb_bridge/assets/80463970/154e4386-9630-48d5-a0f0-8b7c55be2647)
+![image](https://github.com/Ismail821/uvm_verification_ahb_apb_bridge/assets/80463970/2b9c0e23-0507-44b7-bb06-dda3b6c030b9)
 
 
 The RTL Consists of the following:
@@ -28,8 +28,6 @@ The Test Bench Architecture is defined as follows:
 ![image](https://github.com/Ismail821/uvm_verification_ahb_apb_bridge/assets/80463970/bc66ec0b-c631-47ed-880e-9f6a822a933f)
 
 
-
-
 The testbench provides the value for all the APB slaves simultaneously for every cycle and sends them to the DUT as
 
 Test Cases:
@@ -41,3 +39,5 @@ The files consist of 5 Testcases:
 - ahb_apb_bridge_single_read_test.sv: Does a single read to any randomly selected Apb Slaves through the DUT.
 - ahb_apb_bridge_single_write_test.sv: Does single write to any randomly selected Apb Slaves through the DUT.
 - ahb_apb_bridge_random_test.sv: Does Random Read/Write to any randomly selected Apb Slaves through the DUT, it can include burst write and burst read too.
+
+The Sequence generaes the Random  sequence with given constraints while the driver maitains the protocol by asserting the signals at appropriate time
